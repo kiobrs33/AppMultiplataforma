@@ -1,0 +1,8 @@
+Laboratorio 02
+
+Punto Numero 2.3: Probando mi componente "CONTADOR" 
+		Ver imagen Punto-2.3
+Punto Numero 3.2: Importando mi componente "Contador" y visualizando su contenido
+		Ver Imagen Punto-3.2
+Punto Numero 3.3: Enviando datos al componente "Contador" y mostrando.
+		Ver imagen Punto-3.3

@@ -14,10 +14,11 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-      <Image>
+      <Image
         source={require('./logo.png')}
-      </Image>
+      />
       <Text style={styles.welcome}>Bienvenida Alumno Tecsup!</Text>
+      <Text>Rene Lozano Ramos</Text>
       </View>
     );
   }
