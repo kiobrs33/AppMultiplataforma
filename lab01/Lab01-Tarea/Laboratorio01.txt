@@ -5,23 +5,16 @@ Ejecutando el proyecto con "npm start"
 
 Conclusiones: 
 
- -React js es una libreria de codigo abierto, su fin de esta libreria es facilitar la creacion de componentes para 
-interfaz de usuario ,este utiliza un algoritmo llamado "diffing" este componente de react capta las 
-actualizaciones de estado y despues de verfirificar los cambios vuelve a ejecutar las funciones de react para
-realizar cambios en la interfaz o pagina resultante del usuario.
+ -React js es una libreria de codigo abierto, su fin de esta libreria es facilitar la creacion de componentes para interfaz de usuario ,este utiliza un algoritmo llamado "diffing" este componente de react capta las 
+ actualizaciones de estado y despues de veririficar los cambios vuelve a ejecutar las funciones de react para
+ realizar cambios en la interfaz o pagina resultante del usuario.
 
- -React js solo ejecuta las funciones nesesarias para hacer los cambios en la pagina resultante, este no ejecuta todo
-desde cero.
+ -React js solo ejecuta las funciones nesesarias para hacer los cambios en la pagina resultante, este no ejecuta todo desde cero.
 
- -React es facil de instalar, ya que utilizamos un gestor de paquetes muy conocido y es"NPM" gracias a este gestor las
-instalcion de react js no toma mucho tiempo y solo hace con una linea de codigo.
+ -React es facil de instalar, ya que utilizamos un gestor de paquetes muy conocido y es"NPM" gracias a este gestor las instalacion de react js no toma mucho tiempo y solo hace con una linea de codigo.
 
- -Reac js trabaja con el lenguaje de progrmacion "JavaScript", cabe añadir que react trae nuevas formas de programar
-como la creacion de variables del tipos "constante" y tipo "let", tambien trae nuevas formas de crear funciones,
-con poca lineas de codigo listas para utilizar.
+ -Reac js trabaja con el lenguaje de progromacion "JavaScript", cabe añadir que react trae nuevas formas de programar como la creacion de variables de tipos "constante" y tipo "let", tambien trae nuevas formas de crear funciones,con poca lineas de codigo listas para utilizar.
 
- -React js se enfonca en la retilizacion de codigo, pues hace que nostros como programadores empezemos adaptar un
-nuevo estilo programacion con la creacion de librerias que podemos invocar desde cualquier parte del proyecto,
-reduciendo el trabajo de crear funciones ya existentes y de disminuir las lineas de codigo de nuestro proyecto.
+ -React js se enfonca en la reutilizacion de codigo, pues hace que nostros como programadores empezemos adoptar un nuevo estilo de programacion con la creacion de librerias que podemos invocar desde cualquier parte del proyecto, reduciendo el trabajo de crear funciones ya existentes y de disminuir las lineas de codigo de nuestro proyecto.
  
 
