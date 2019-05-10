@@ -46,7 +46,9 @@ export default class App extends Component<Props> {
     // data: people,
     // text: ''
     loading: false,
-    data: []
+    data: [],
+    peliculas: [],
+    text: ''
   }
   componentDidMount(){
     this.setState({loading: true});
@@ -56,7 +58,8 @@ export default class App extends Component<Props> {
     }).then(response => {
       this.setState({
         loading: false,
-        data: response.data.data.movies
+        data: response.data.data.movies,
+        peliculas: response.data.data.movies
       });
     }).catch(err => {
       this.setState({loading: false});
@@ -76,6 +79,21 @@ export default class App extends Component<Props> {
       onChangeText={this.searchHandler}
       value={this.state.text}
     />);
+  }
+
+  searchHandler = text => {
+    this.setState({
+      text: text
+    }, () => {
+      const newData = this.state.peliculas.filter(item => {
+        const itemData = `${item.title.toUpperCase()}`;
+        const textData = text.toUpperCase();
+        return itemData.indexOf(textData) > -1;
+      });
+      this.setState({
+        data: newData
+      });
+    });
   }
 
   // searchHandler = text => {
