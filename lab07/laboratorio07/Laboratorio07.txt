@@ -1,0 +1,24 @@
+Laboratorio 07
+
+Conclusiones:
+	
+	* En este laboratorio se tuvo que instalar librerias para activar la navegacion en al aplicacion, tambien
+	se tuvo que linkear e importar en el archivo mainACtivity y adicionalmente se añadio una funcion para
+	la navegacion en el dispositivo.
+	* Se agrego una libreria lammada ASyngStorage para el almacenamiento del token al iniciar sesion en la
+	la aplicacion cabe resaltar que le añadimos una clave al token y esta pueda ser accedida desde cualquier
+	parte de la app.
+	* Se utilizo la libreria AXIOS esta nos permite establecer una comunicacion con nuestra API DAWA_BLOG,
+	solo tenemos que escribir la URL para acceder a la API, tambien podemos establecer el tipo de METODO y
+	enviarle datos.
+	* Se configuro el archivo APP.JS tanto para mostrar o linkear las vistas en la aplicacion, tambien se 
+	establecido una funcion para controlar si el usuario esta logeado o no en la aplicacion, asi se habilitara
+	nuevas vistas.
+	* El trabajar con componentes es indispensable en react-native ya podemos compartir y reutilizar cualquier
+	codigo ya hecho evitando repetir y agiliza el trabajo.
+	* Se utilizo librerias para añadir iconos a nuestras vistas como tambien formularios para mejorar el diseño
+	de la App, cada libreria nos provee una gran variedad de estilos que podemos emplear en la app haciendo mucho
+	mas facil el diseño de interfaces.
+	* Mediante el estado, podemos almecenar informacion enviada desde los formulario y tambien podemos asociarlos
+	a evento como la visibilidad o no of the passwords.
+

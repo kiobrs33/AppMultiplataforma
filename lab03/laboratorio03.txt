@@ -1,0 +1,16 @@
+Laboratorio 03:
+	
+	Punto 1.4: Configurando los SDK
+	-Look image "Punto-1.4"
+	Punto 1.6: Cofigurando el entorno de varibles:
+	-Look image "Punto-1.6"
+	Tarea: Agregando imagen a la aplicacion hecho con react-native
+		Look image "Tarea"
+
+
+	Conclusiones:
+		-React Native te permite crear o cosntruir aplicaciones multiplatafora ya se para android o para IOS existe compatibilidad.
+		-React Native te permite desarrollar aplicaciones rapidamente, ya que puedes reutilizar codigo y esta en lenguaje muy conocido como es java.
+		-Para la partes estetica react trabaja con archivos css, que te permite personalizar tu aplicacion y sea mas atractiva para el usuario.
+		-React te permite manejar arrays que contienen estilos y los puedes llamar a tu proyecto, cabe añadir que trabaja etiquetas muy parecidas a las de HTML lo que hace mas facil el trabajo.
+

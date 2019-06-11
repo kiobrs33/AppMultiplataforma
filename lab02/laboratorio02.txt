@@ -1,8 +1,39 @@
 Laboratorio 02
 
 Punto Numero 2.3: Probando mi componente "CONTADOR" 
-		Ver imagen Punto-2.3
+	Ver imagen Punto-2.3
+
 Punto Numero 3.2: Importando mi componente "Contador" y visualizando su contenido
-		Ver Imagen Punto-3.2
+	Ver Imagen Punto-3.2
+
 Punto Numero 3.3: Enviando datos al componente "Contador" y mostrando.
-		Ver imagen Punto-3.3
+	Ver imagen Punto-3.3
+
+Punto Numero 3.5: Añadiendo una condicion
+	Ver imagen Punto-3.5
+
+Punto Numero 3.6: Probando dos componentes a la vez
+	Ver imagen Punto-3.6
+
+Punto Numero 5.6
+	Ver imagen Punto-5.6
+
+Tarea: Calculadora
+	Look images:
+		Tarea Final
+		codigoTarea01
+		codigoTarea02
+		codigoTarea03
+
+Conclusiones:
+	-En este laboratorio se uso los compenentes, los componentes son elemento que tienen propiedades y funcionnes, estos son independientes y lo mas importante reutilizables.
+	-Existen dos tipos de componentes los funcionales y de clase.
+		*Funcionales: Son aquellos que tienen solo propiedades.
+		*Clase: Estos tienen propiedades y ciclo de vida.
+	-Los componentes puede recibir datos, ya poseen la propiedad "props" que hace del componente mas interactivo.
+	-En este laboratorio hemos llamado a nuestro componente "contador" dos veces en un solo archivo y cada uno trabaja de forma independiente, apesar que modificabamos las propiedades de cada uno cuando entrabamos en funcionamiento, no habia complicaciones ni uno dependia del otro.
+	-Los componentes pueden ser manipulados de varias formas y en este laboratorio lo hicimos mediante variables de estado, al incorporar "state" el componente ya puede tener un ciclo de vida.
+	-Los State pueden contener variables staticas, estas variables extraen informacion de los props.
+
+
+

@@ -1,11 +1,6 @@
-package com.lab06;
+package com.proyecto6;
 
 import com.facebook.react.ReactActivity;
-
-//Importandos los nuevos paquetes instalados
-import com.facebook.react.ReactActivityDelegate;
-import com.facebook.react.ReactRootView;
-import com.facebook.gesturehandler.react.RNGestureHandlerEnabledRootView;
 
 public class MainActivity extends ReactActivity {
 
@@ -15,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "lab06";
+        return "proyecto6";
     }
 }
