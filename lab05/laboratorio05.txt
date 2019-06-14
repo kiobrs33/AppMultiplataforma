@@ -1,0 +1,13 @@
+laboratorio05
+
+Conclusiones :
+
+	* Se trabajo con el ciclo de vida de un componente, en este laboratorio se uso el METODO "componentDidMount" esta funcion se da despues que el componente se haya cargado en el DOM y bueno se agrego eventos como del contador o del reloj.
+	* Se uso una funcion nativa de java llamada "serInterval" este metodo nos permite ejecutar funciones de acuerdo al tiempo establecido en milisegundos, asi fue que se  hizo el contador y el reloj.
+	* En este laboratorio se utilizo el componente "FlatList", este componete maneja listas en react-native, cabe resaltar que tenemos que brindarle un objeto a recorrer "ARRAY" y cada elemento que tenga este array lo mostrara en la lista.
+	* Al utilizar "FlatList" es recomendable utilizar "KEYS" para cada elemento de nuestro "ARRAY" para asi acceder a su contenido mediante la "KEY".
+	* Se puede realizar operaciones dentro de un "STYLE" asi fue que por cada fila podemos agregarles estilos distintos y personalizados.
+	* Los componentes no permiten lanzar eventos sobre los ebjetos que tengan por ejemplo al presionar un BUTTON,TEXTFIELD, entre otros mas.Asi podemos manejar las acciones que pueda hacer el usuario en la aplicacion.
+	* La libreria AXIOS no permite establecer comunicacion con APIS ya se propios o externos, basta darle la url , el tipo de METODO o tambien en enviar data.Esta libreria es genial para personas que tengan un BACKEND Y FRONTED  en su proyecto, esta libreria facilita el trabajo de comunicacion entre las dos partes.
+
+Las imagenes y videos del labroratorio estan en este misma carpeta.

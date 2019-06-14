@@ -1,2 +1,16 @@
 Laboratorio 04:
+
+Conclusiones:
 	
+	* En este laboratorio se empleo los COMPONENTES, los componentes son clases o modulos que podemos llamar desde cualquier lugar de la aplicacion, lo que hace que se reutilice el codigo y esta es la idea que tiene REACT-NATIVE.
+	* Para que clase pueda ser un compenente este debe EXTENDERSE de COMPONENT que es propio de react, los componentes se puede reutilizar en una misma archivo y estos son independientes aunque sea el mismo componente y eso lo podemos apreciar cuando se creo contadores.
+	* Los componentes tienen PROPIEDADES EXTERNAS gracias a esta caracteristica se pueden manejar variables enviados desde otro archivo o clase para recibir estos datos se utiliza "this.props.variable"
+	* Asi como los componentes poseen propiedades EXTERNAS tambien poseen las INTERNASy estas se manejan mediante los ESTADOS aqui donde se almacenan datos o variables pero ya propio del componente para acceder a sus propias variables se utiliza "this.state.variable".
+	* Ahora para poder cambiar el contenido de las variables que estan en el ESTADO se tiene que utilizar "this.setState".
+	* Los componentes nos permiten crear EVENTOS que pueden ser activados mediante la propiedad de ONPRESS de un boton, los eventos son como funciones y ahi podemos programas ciertos procesos que manejen el ESTADO del componente.
+	* El ciclo de vida de un compenente se divide en tres: el montado, actualizacion y el desmontado. Todos las etapas mencionadas anteriomente esta muy relacion con el RENDER de los componetes.
+
+
+Tarea
+	
+	Ver las imagenes donde se muestra la suma, resta, division y multiplicacion.

@@ -13,7 +13,6 @@ import Icon from 'react-native-ionicons';
 import axios from '../../lib/axios';
 
 import imageBackground from '../../assets/img/sala-cine.jpg';
-// import { AsyncResource } from 'async_hooks';
 import AsyncStorage from '@react-native-community/async-storage';
 
 export default class SignInScreen extends React.Component {
@@ -53,12 +52,24 @@ export default class SignInScreen extends React.Component {
 			}
 		})
 			.then(async response => {
+				// ToastAndroid.showWithGravity(
+				// 	response.data.message,
+				// 	ToastAndroid.LONG,
+				// 	ToastAndroid.TOP
+				// );
+				// await AsyncStorage.setItem('userToken', response.data.token);
+				// this.props.navigation.navigate('App');
+
+				//Laboratorio 08 Multiplataforma
+				console.log(response.data);
+				await AsyncStorage.setItem('userId', response.data.data._id);
+				await AsyncStorage.setItem('userName', response.data.data.username);
+				await AsyncStorage.setItem('userToken', response.data.token);
 				ToastAndroid.showWithGravity(
 					response.data.message,
 					ToastAndroid.LONG,
 					ToastAndroid.TOP
 				);
-				await AsyncStorage.setItem('userToken', response.data.token);
 				this.props.navigation.navigate('App');
 			})
 			.catch(err => {

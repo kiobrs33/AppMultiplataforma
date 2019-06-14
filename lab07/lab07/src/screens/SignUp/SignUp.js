@@ -66,7 +66,10 @@ export default class SignInScreen extends React.Component {
 			data: {
 				email: this.state.name,
 				username: this.state.user,
-				password: this.state.password
+				password: this.state.password,
+				name: 'vacio',
+				age: 99,
+				gender: 'M'
 			}
 		})
 			.then(async response => {

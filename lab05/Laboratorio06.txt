@@ -1,0 +1,10 @@
+Laboratorio06
+
+	* En este laboratorio se instalo librerias como "React-Navigation" para poder navegar entre vistas en la app y claro lo linkeamos dentro de la app para que funcione correctamente.
+	* La libreria React-navigation brinda diferente formas de navegar entre las vistas del telefono, tambien nos permite personalizar los estilos como el color, titulo, tamaño ,etc.Muy aparte de la apariencia nos brinda funciones para asociarlo a vistas, te permite configurar a vista r¿por default,etc.
+	* React-Navigation puede ser llamado desde otras vistas para ser utilzido en una funcion o evento y puedes navegar entre todas las vistas de tu App.
+	* Adiciononalmente puedes enviar datos de una vista a otra, eso ayuda que las vistas de la aplicacion comparta datos entre si
+	* Es importante crear una funcion OVERRIDE en el mainactivity de la aplicacion y asi habilitar la libreria para que el usuario pueda interactuar con la app mediante GESTOS.
+
+
+ 

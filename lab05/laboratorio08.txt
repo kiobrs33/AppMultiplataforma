@@ -1,0 +1,13 @@
+laboratorio08
+
+Conclusiones:
+
+	* La libreria socket.io te permite crear facilmente un chat, esta libreria trabaja con con escuchas y palabras en secreto para reconocer los mensaje enviados desde otro lugar, los mensaje son casi instantaneos no se demoa absolutamente nada.
+	* Varias dispositivos se pueden comunicar al estar en una misma red, no hay limites de usuarios
+	* Para que varios dispositivos en este caso moviles pudan comunicarse, todos tienen que estar en una misma red y comunicarse a un mismo servidor(Mi laptop), cada dispositivo que se conecte al servidor se vera con en consola como un nuevo usuario conectado.
+	* Para poder utilizar SOCKET.IO en react-native se tiene que instalar la libreria y configurar en el archivo INDEX.JS, es en este archivo donde ponemos la direccion IP de nuestro servidor y tan solo hacer esto, ya no sera nesesario invocarlo en cada componente de La APP.
+	* Ahora para que el chat sea en VIVO o tiempo real se hace uso de la funcion "componentDidMount" este es uno de los ciclos de vida de los componente lo usamos por la funcion se da cuando la app esta abierda o siendo utilizada y e aprovechando esto podemos enviar y recibir mensajes en tiempo real.
+	* CAda mensaje que estamos enviando se almacena en un arrat que puede contener la informacion del usaurio que la esta enviando y el contennido, es opcional podemos agregar mas datos.
+
+
+las pruebas como imagenes y videos se encuentran en el mismo laboratorio
