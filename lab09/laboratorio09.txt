@@ -15,3 +15,7 @@ Laboratorio 09:
 	asociado a un token en este la del usaurio registrado.
 
 Las imagenes y videos estan en esta misma carpeta comprobando la funcionalidad de APP.
+
+
+-------------------------->EL LABORATORIO 07 ES EN EL QUE ESTOY AVANZANDO CADA LAB, ya que mi internet no permite
+descargar los modulos en cada laboratorio, suele colgarse por mi internet espero me comprenda profesor :D
