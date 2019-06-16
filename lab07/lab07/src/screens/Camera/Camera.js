@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { RNCamera } from 'react-native-camera';
+import axios from '../../lib/axios';
 
 const PendingView = () => {
-	<View
-		style={{
-			flex: 1,
-			backgroundColor: 'lightgreen',
-			justifyContent: 'center',
-			alignItems: 'center'
-		}}
-	>
-		<Text>Waiting</Text>
-	</View>;
+	return (
+		<View
+			style={{
+				flex: 1,
+				backgroundColor: 'green',
+				justifyContent: 'center',
+				alignItems: 'center'
+			}}
+		>
+			<Text>Waiting</Text>
+		</View>
+	);
 };
 
 class CameraScreen extends Component {
@@ -36,7 +39,7 @@ class CameraScreen extends Component {
 						buttonNegative: 'Cancel'
 					}}
 				>
-					{({ camera, status, recordAudioPermissionsStatus }) => {
+					{({ camera, status, recordAudioPermissionStatus }) => {
 						if (status !== 'READY') return <PendingView />;
 						return (
 							<View
@@ -62,7 +65,30 @@ class CameraScreen extends Component {
 	takePicture = async function(camera) {
 		const options = { quality: 0.5, base64: true };
 		const data = await camera.takePictureAsync(options);
-		console.log(data.url);
+		const token = await camera.takePictureAsync('userToken');
+		console.log('aquiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii');
+		console.log(data.uri);
+
+		const formData = new FormData();
+		formData.append('file', {
+			uri: data.uri,
+			name: 'my_photo_lozano.jpg',
+			type: 'image/jpg'
+		});
+		axios({
+			url: 'api/file/upload',
+			method: 'POST',
+			headers: {
+				Authorization: token
+			},
+			data: formData
+		})
+			.then(response => {
+				alert('Guardado con exito');
+			})
+			.catch(error => {
+				alert('Hubo une errror');
+			});
 	};
 }
 

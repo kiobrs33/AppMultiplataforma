@@ -1,0 +1,17 @@
+Laboratorio 09:
+
+	Conclusiones:
+
+	* Se instalado la libreria React-Native-camera este nos permite utilizar la camara del movil, claro tambien
+	se tiene que pedir la authizacion del usuario.
+	* Se utilizo el componente RNCamera, este componente nos frinda funciones para los estilos, que objetos
+	podmeos de la camra como el flash, entre otras caractiricas mas.
+	* Se implement la librearia la libreria MULTER este tiene como objetivo guardar o agregar un objeto que puede
+	contener valores o datos.
+	* Para poder capturar la imagen o foto de la camara se crea un funcion que recibe como objeto   a la CAMERA
+	de este objeto podemos acceder a sus funciones como "takePictureAsunc" esta nos permite tomar y no devuelve 
+	un objeto con contiene la informacion de la foto tomada de ahi sacamos la ruta de la imagen.
+	* Usan el api dawa_blog podemos almacenar informacion de la imagen como la ruta , un nomnbre, tipo de imagen
+	asociado a un token en este la del usaurio registrado.
+
+Las imagenes y videos estan en esta misma carpeta comprobando la funcionalidad de APP.

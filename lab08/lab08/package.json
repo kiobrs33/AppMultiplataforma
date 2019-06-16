@@ -9,8 +9,10 @@
   "dependencies": {
     "@react-native-community/async-storage": "^1.4.0",
     "axios": "^0.18.0",
+    "multer": "^1.4.1",
     "react": "16.8.3",
     "react-native": "0.59.8",
+    "react-native-camera": "^2.10.2",
     "react-native-gesture-handler": "^1.2.1",
     "react-native-ionicons": "^4.5.6",
     "react-native-textinput-effects": "^0.5.1",
