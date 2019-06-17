@@ -11,11 +11,13 @@ import SignUpScreen from './src/screens/SignUp/SignUp';
 import HomeScreen from './src/screens/Home/Home';
 import ChatScreen from './src/screens/Chat/Chat';
 import CameraScreen from './src/screens/Camera/Camera';
+import Map from './src/screens/Map/Map';
 
 const AppStack = createDrawerNavigator({
 	Home: HomeScreen,
 	Chat: ChatScreen,
-	Camera: CameraScreen
+	Camera: CameraScreen,
+	Map: Map
 });
 const AuthStack = createBottomTabNavigator({
 	SignIn: SignInScreen,

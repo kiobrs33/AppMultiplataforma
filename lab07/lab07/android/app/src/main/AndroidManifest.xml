@@ -2,6 +2,8 @@
   package="com.lab07">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCES_FINE_LOCATION" />
 
     <application
       android:name=".MainApplication"
@@ -10,6 +12,9 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:allowBackup="false"
       android:theme="@style/AppTheme">
+      <meta-data
+        android:name="com.google.android.geo.API.KEY"
+        android:value="AIzaSyBn3IR0zbtk91PzKuBtzFaVINArBRO4weweTSs"/>
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"

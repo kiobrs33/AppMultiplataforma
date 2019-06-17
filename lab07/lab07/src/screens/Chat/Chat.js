@@ -74,6 +74,12 @@ export default class ChatScreen extends React.Component {
 		});
 	};
 
+	mapHandler = () => {
+		this.setState({ modalVisible: false }, () => {
+			this.props.navigation.navigate('Map');
+		});
+	};
+
 	render() {
 		const user = { _id: this.state.userId || -1 };
 		return (
@@ -93,6 +99,11 @@ export default class ChatScreen extends React.Component {
 							onPress={this.cameraHandler}
 							title="Tomar Foto"
 							color="green"
+						/>
+						<Button
+							onPress={this.mapHandler}
+							title="Compartir ubicacion"
+							color="yellow"
 						/>
 						<Button
 							onPress={this.backHandler}
