@@ -1,0 +1,21 @@
+Laboratorio10:
+
+Conclusiones:
+	
+	* Antes de utilizar la api de google maps tenemos que solicitar permisos al usuario, para eso tenemos que 
+	al archivo Android manifest y es aqui tambien donde establecemos nuestra key, sirve para que google 
+	no reconozca como usuario desarrollador y que vamos a usar su api.
+	* Para poder obtener una llave tenemos que ir ala pagina principal de google y crear la key como desarrollador
+	, para luego añadirlo al proyecto.
+	* En este laboratorio hemos accedido a las demensiones del la pantalla del telefono, lo hacemos con el fin
+	que la vista se adapte a cualquier dispositivo movil.
+	* Para poder acceder a la ubicacion del usuario se tuvo que llamar al permiso añadido en al ArchivoManifest
+	y generar un pequeña ventanita que el usuario debe aceptar para manejar su posicion en el mapa.
+	* Para poder generar el permiso tenemos que usa la funcion didMount del componente ya que este se ejecuta
+	mientras el componente es usado.
+	* El mapa nos permite agregar estilos a las calles , el fondo, entre otras cosas mas que podemos editar
+	* Se utilizo items flotantes sobre la vista en este el mapa, esto detalle le da una mejor personalizacion
+	y mejorar el diseño de la vista.
+
+
+Todo se esta guardando en el laboratorio 07 :D
