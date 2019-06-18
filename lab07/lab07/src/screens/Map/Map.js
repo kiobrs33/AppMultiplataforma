@@ -3,7 +3,7 @@ import {
 	Platform,
 	View,
 	Text,
-	PermissionAndroid,
+	PermissionsAndroid,
 	StyleSheet,
 	Dimensions
 } from 'react-native';
@@ -192,17 +192,17 @@ class MapStyle extends Component {
 	}
 	requestGpsPermission = async () => {
 		try {
-			const granted = await PermissionAndroid.request(
-				PermissionAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+			const granted = await PermissionsAndroid.request(
+				PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
 				{
-					title: 'Permiso para la geocolizacion',
+					title: 'Permiso para la geocalizacion',
 					message: 'Necesistamos tu permiso para mostrar tu posicion ',
 					buttonNeutral: 'Preguntarme luego ',
 					buttonNegative: 'Cancelar',
 					buttonPositive: 'Ok'
 				}
 			);
-			if (granted === PermissionAndroid.RESULT.GRANTED) {
+			if (granted === PermissionsAndroid.RESULTS.GRANTED) {
 				console.log('You can use the geocolisacion');
 				this.setState({ granted: true }, this.getPosition);
 			} else {
@@ -216,12 +216,17 @@ class MapStyle extends Component {
 	getPosition = () => {
 		navigator.geolocation.getCurrentPosition(
 			data => {
-				console.log('Data -> ', data);
+				console.log('data', data);
 				this.setState({
-					data: data,
-					latitude: data.coords.latitude,
+					data: data.coords.latitude,
+					latitude: data.coords.longitude,
 					longitude: data.coords.longitude
 				});
+				// this.setState({
+				// 	data: data,
+				// 	latitude: data.coords.latitude,
+				// 	longitude: data.coords.longitude
+				// });
 			},
 			error => {
 				console.log('Error', error);
@@ -273,7 +278,8 @@ class MapStyle extends Component {
 						customMapStyle={customStyle}
 					>
 						<Marker
-							draggable={{
+							draggable
+							coordinate={{
 								latitude: this.state.latitude,
 								longitude: this.state.longitude
 							}}
