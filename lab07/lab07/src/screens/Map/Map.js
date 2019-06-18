@@ -3,9 +3,9 @@ import {
 	Platform,
 	View,
 	Text,
-	PermissionsAndroid,
 	StyleSheet,
-	Dimensions
+	Dimensions,
+	PermissionsAndroid
 } from 'react-native';
 import MapView, { ProviderPropType, Marker } from 'react-native-maps';
 import Icon from 'react-native-ionicons';
@@ -190,6 +190,7 @@ class MapStyle extends Component {
 	componentDidMount() {
 		this.requestGpsPermission();
 	}
+
 	requestGpsPermission = async () => {
 		try {
 			const granted = await PermissionsAndroid.request(
@@ -216,17 +217,13 @@ class MapStyle extends Component {
 	getPosition = () => {
 		navigator.geolocation.getCurrentPosition(
 			data => {
+				alert(data.coords);
 				console.log('data', data);
 				this.setState({
-					data: data.coords.latitude,
-					latitude: data.coords.longitude,
+					data: data,
+					latitude: data.coords.latitude,
 					longitude: data.coords.longitude
 				});
-				// this.setState({
-				// 	data: data,
-				// 	latitude: data.coords.latitude,
-				// 	longitude: data.coords.longitude
-				// });
 			},
 			error => {
 				console.log('Error', error);
@@ -234,6 +231,8 @@ class MapStyle extends Component {
 			}
 		);
 	};
+	cancelHandler = () => this.props.navigation.navigate('Chat');
+	sharedHandler = () => this.props.navigation.navigate('Chat');
 	render() {
 		const actions = [
 			{
