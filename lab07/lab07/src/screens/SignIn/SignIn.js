@@ -64,6 +64,7 @@ export default class SignInScreen extends React.Component {
 				console.log(response.data);
 				await AsyncStorage.setItem('userId', response.data.data._id);
 				await AsyncStorage.setItem('userName', response.data.data.username);
+				await AsyncStorage.setItem('userEmail', response.data.data.email);
 				await AsyncStorage.setItem('userToken', response.data.token);
 				ToastAndroid.showWithGravity(
 					response.data.message,

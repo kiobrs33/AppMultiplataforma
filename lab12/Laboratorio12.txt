@@ -1,0 +1,23 @@
+Laboratorio 12:
+
+Conclusiones:
+
+	* Se implemento al libreria "react-native-Settings-List" este paquete, no brinda componente netamento hechos
+	para una lista, podemos agregar Titulos, items, crear secciones,etc.Con este componente podemos crear
+	diseños facilmente y no tener que generar uno desde cero.
+	* Los componentes que nos brindan "react-native-Settings-List" son totalmente editables podemos agregar
+	estilos, colores, margenes,tamaño,etc.Esto nos permite mejorar el diseño del componente mejorando la
+	experiencia del usuario.
+	* Se utilizo el parametro OFFSET, este nos permite obtener datos de la API pero solo los diez datos,
+	si por ejemplo le asignamo el numero 4 nos devolvera datos del 31 hasta el 40, y si le damos otro valor como
+	1 nos devolvera datos desde el 1 hasta 10, cabe añadir que utiliza un campo llamado "ID" de cada datos
+	asi puede devolverte 10 datos segun el numero brindado a OFFSET.
+	* Para poder listar losd datos obtenidos de la api se invoca la funcion "componentDidMount" este es parte del
+	ciclo de vida del componente que se activa cuando esta en el componente, este invocara a la API y como
+	es primera vez se le dara un offset 1 que devolvera los diez primeros datos, estos datos luego son guardads
+	en un array y a la vez la variable OFFSET se le agregara un "+1".Este mas uno sirve que para cuando el 
+	usuario presione le botom de ver mas se enliste los siguientes 10 (11 hasta 20)datos,se enlistan los siguientes
+	datos ya que OFFSET cambio de valor de 1 a 2.
+	* Al final flatList RECORRE el array con los datos obtenidos de la API
+
+Ver imagenes y video en la misma carpeta 

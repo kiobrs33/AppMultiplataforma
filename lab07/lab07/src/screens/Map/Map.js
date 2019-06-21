@@ -7,7 +7,7 @@ import {
 	Dimensions,
 	PermissionsAndroid
 } from 'react-native';
-import MapView, { ProviderPropType, Marker } from 'react-native-maps';
+import MapView, { Marker, ProviderProptype } from 'react-native-maps';
 import Icon from 'react-native-ionicons';
 import { FloatingAction } from 'react-native-floating-action';
 
@@ -217,7 +217,6 @@ class MapStyle extends Component {
 	getPosition = () => {
 		navigator.geolocation.getCurrentPosition(
 			data => {
-				alert(data.coords);
 				console.log('data', data);
 				this.setState({
 					data: data,

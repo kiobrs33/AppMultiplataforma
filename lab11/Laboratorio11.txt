@@ -1,0 +1,16 @@
+Laboratorio 11
+
+	Conclusiones:
+	
+	* Se implemento la libreria  "React-native-elements" este nos brinda una gran cantidad de componentes que mejoran
+	el aspecto de las vistas, esta libreria posee su comunidad que cada vez agregan mas comoponentes que facilitan
+	nuestro trabajo para el diseño de interfaces o items.
+	* Se creo un archivo base que contiene la configuracion de las dimensiones de la pantalla para que no se descuadre
+	o se mueva los objetos en la vista.
+	* Es bueno crear componentes que podemos reutilizar en cada clase, esto evita reescribir o repetir codigo innesesario.
+	* Se implemento la libreria MD5, este nos permite obtener la foto de una cuenta de gmail se le denomina AVATAR
+	con esta foto mejoramos el aspecto de la APP.
+	* Para poder obtener la foto de un determindo correo, tenemos que almacenarlo en AsyngStorage memoria del telefono para
+	luego recuperarlo y enviarselo a MD5
+
+Las iamgenes y videos se encuentran en la misma carpeta
